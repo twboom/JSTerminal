@@ -9,9 +9,13 @@ class Line {
         this.content = content;
         const line = document.createElement('p');
         
+        // Make the element
         if (html) { line.appendChild(content) }
         else { line.innerHTML = content };
         cli.output().appendChild(line);
+
+        // Scroll to bottom of page
+        window.scrollTo(0, document.body.scrollHeight);
     };
 };
 
