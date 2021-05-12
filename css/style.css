@@ -37,3 +37,9 @@ input {
     background-color: black;
     color: white;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    display: block;
+    width: 0px;
+}
